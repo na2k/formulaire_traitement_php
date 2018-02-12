@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="title">HTML - Session 2</h1>
+  <h2 class="title">Le roi de l'auto pas chère</h2>
+  <form action="traitement.php" method="post">
+    <label for="brand">Marque</label>
+    <select name="brand" id="brand" class="block">
+      <option value="mercedes">mercedes</option>
+      <option value="audi">audi</option>
+      <option value="lamborghini">lamborghini</option>
+      <option value="range rover">range rover</option>
+      <option value="bugatti">bugatti</option>
+      <option value="peugeot">peugeot</option>
+      <option value="renault">renault</option>
+      <option value="bmw">bmw</option>
+      <option value="twingo">twingo</option>
+    </select>
+    <label for="range">Gamme</label>
+    <select name="range" id="range" class="block">
+      <option>berline</option>
+      <option>suv</option>
+      <option>compacte</option>
+      <option>sportive</option>
+      <option>super sportive</option>
+      <option>van</option>
+      <option>utilitaire</option>
+      <option>crossover</option>
+      <option>twingo</option>
+    </select>
+    <span>Etat</span>
+    <label for="new_used">Neuf & occasion</label>
+    <input type="radio" value="new_used">
+    <label for="new">Neuf</label>
+    <input type="radio" value="new">
+    <label for="used">Occasion</label>
+    <input type="radio" value="used">
+    <label for="price_max" class="block">Prix min</label>
+    <input id ="price_max" type="range" name="price_max" min="100000000" max="1000000000" step="10000">
+    <span id="current_price_max">1</span><span>€</span>
+    <button class="btn block">Acheter (999 999 999 €)</button>
+  </form>
+  <h2 class="title">Inscription</h2>
+  <form action="traitement.php" method="post" enctype="multipart/form-data">
+    <input type="text" class="block" name="nom" placeholder="Nom*" required>
+    <input type="text" class="block" name="prenom" placeholder="Prénom*" required>
+    <input type="text" class="block" name="email" placeholder="Email*" required>
+    <input type="tel" class="block" name="telephone" placeholder="Téléphone*" required>
+    <input type="text" class="block" name="pseudo" placeholder="Pseudo*" required>
+    <input type="password" class="block" name="mdp" placeholder="Mot de passe*" required>
+    <input type="file" class="block" name="avatar">
+    <input type="text" class="block" name="anniversaire" placeholder="jj/mm/aaaa">
+    <input type="submit" name="register" class="btn block" value="Valider">
+  </form>
+  <h2 class="title">Search music</h2>
+  <form action="traitement.php" id="music_search" method="post">
+    <label for="choix_musique">Choisissez</label>
+    <input list="genre_music" type="text" class="block" id="choix_musique">
+    <datalist id="genre_music" name=genre_music>
+      <option value=""></option>
+      <option>Metal</option>
+      <option>Country</option>
+      <option>Variété</option>
+      <option>Dance hall</option>
+      <option>Rap</option>
+      <option>Soul</option>
+      <option>Modern Jazz</option>
+      <option>Funk</option>
+      <option>Ragga</option>
+      <option>Reggae</option>
+      <option>Electro</option>
+      <option>Rock</option>
+      <option>Jazz</option>
+      <option>Blues</option>
+      <option>Gnawa</option>
+      <option></option>
+      <option></option>
+      <option></option>
+    </datalist>
+    <input type="button" class="btn block" name="choixmusic" value="Choisir">
+  </form>
+  <h2 class="title">Shape Shifting</h2>
+  <input id="shape_shifter" type="range" min="100" max="500" value="150" step="1">
+  <div id="circle" class="circle">
+    <span class="size">150</span>
+    <span>px</span>
+  </div>
+</body>
+</html>

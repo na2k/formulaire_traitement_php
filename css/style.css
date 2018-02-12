@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.title{
+  font-family: "dimitri swank";
+  color: darkorange;
+}
+
+label{
+  cursor: pointer;
+}
+
+.block{
+  display: block;
+  margin: 20px auto;
+
+}
+
+.btn{
+  align-items: center;
+}
+
+form{
+  padding-bottom: 20px;
+  border-bottom: 2px solid darkorange;
+}
+
+.circle{
+  background-color: red;
+  color: black;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  margin: auto;
+  font-family: "13_Misa"
+}
